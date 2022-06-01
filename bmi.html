@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>BMI</title>
+</head>
+
+<body>
+    <h1>BMI</h1>
+    <div id="blok1">
+        
+        <fieldset>
+            <legend>Powitanie gościa</legend>
+            <label for="">Jak masz na imię</label>
+            <input type="text" id="imie" onchange="Witaj()">
+            <p id="wybor">Wybierz kolor tła</p>
+            <input type="color" id="kol" onchange="ZmienKolor()">
+        </fieldset>
+        
+        <fieldset>
+            <label>Wzrost [m]: </label>
+            <input type="number" id="pwzrost" step="0.01">
+            <label>Waga [kg]: </label>
+            <input type="number" id="pwaga" step="0.01">
+            <br>
+            <br>
+            <button class="bouncy" type="button" onclick="Oblicz()" id="oblicz">Oblicz BMI</button>
+        </fieldset>
+
+        <div id="wynik"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="rady">
+        <h2>Zobacz kilka wskazówek odnośnie twojego BMI</h2>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="reset">
+        <button class="bouncy" type="reset" onclick="location.reload();" id="przycisk_reset" disabled>RESET</button>
+    </div>
+   
+</body>
+</html>
